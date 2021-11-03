@@ -1,0 +1,25 @@
+name: Publish
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  release:
+    strategy:
+      fail-fast: true
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set output
+        id: vars
+        run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.7
+      - name: Run image
+        uses: abatilo/actions-poetry@v2.0.0
+        with:
+          poetry-version: 1.0.10
+      - name: Publish python package
+        run: poetry version ${{ steps.vars.outputs.tag }} && poetry build && poetry publish -u ${{ secrets.PYPI_USERNAME }} -p ${{ secrets.PYPI_PASSWORD }}

@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "{{cookiecutter.project}}"
+version = "0.1.0"
+description = "{{cookiecutter.description}}"
+authors = ["{{cookiecutter.author}} <{{cookiecutter.email}}>"]
+license = "Apache-2.0"
+keywords = []
+
+[tool.poetry.dependencies]
+python = "^3.6.1"
+single-version = "^1.2.2"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.4.3"
+pre-commit-hooks = "^3.1.0"
+pre-commit = "^2.5.1"
+pytest-coverage = "^0.0"
+pytest-mock = "^3.3.0"
+coverage-badge = "^1.0.1"
+cookiecutter = "^1.7.2"
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+packages = [
+    { include = "{{cookiecutter.project}}",  from="." },
+]
