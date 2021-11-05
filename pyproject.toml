@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "{{cookiecutter.project}}"
+name = "financial-data"
 version = "0.1.0"
-description = "{{cookiecutter.description}}"
-authors = ["{{cookiecutter.author}} <{{cookiecutter.email}}>"]
+description = "financial data eod"
+authors = ["Stefano Tabacco <tabacco.stefano@gmail.com>"]
 license = "Apache-2.0"
 keywords = []
 
@@ -28,5 +28,5 @@ requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
 
 packages = [
-    { include = "{{cookiecutter.project}}",  from="." },
+    { include = "financial-data",  from="." },
 ]
