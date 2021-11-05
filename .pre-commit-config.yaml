@@ -8,7 +8,6 @@ repos:
       - id: end-of-file-fixer
       - id: check-yaml
       - id: check-added-large-files
-      - id: requirements-txt-fixer
   - repo: https://github.com/psf/black
     rev: 20.8b0
     hooks:
@@ -39,6 +38,6 @@ repos:
     hooks:
       - id: update-requirements-txt
         name: Update requirements.txt file
-        entry: poetry export --without-hashes -o requirements.txt -f requirements.txt --dev -vv
+        entry: ./update-requirements.sh
         files: poetry.lock
         language: system
