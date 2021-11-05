@@ -22,7 +22,7 @@ jobs:
         with:
           poetry-version: 1.1.4
       - name: Update data
-        run: poetry run python financialdata/download.py
+        run: poetry install && poetry run python financialdata/download.py
       - name: Commit updated data
         uses: zwaldowski/git-commit-action@v1
       - run: echo "Updated data ${{ steps.git_commit.outputs.sha }}"
