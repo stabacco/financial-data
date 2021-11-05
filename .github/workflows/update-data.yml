@@ -5,7 +5,7 @@ on:
   push:
     branches: [master]
 jobs:
-  update-data:
+  update-data-1:
     strategy:
       fail-fast: true
     runs-on: ubuntu-latest
