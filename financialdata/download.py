@@ -17,5 +17,5 @@ def download_ticker(ticker_name):
 
 
 if __name__ == "__main__":
-    df = download_ticker("TSLA")
+    df = download_ticker("AAPL")
     print(df.columns)
