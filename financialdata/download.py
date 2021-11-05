@@ -12,6 +12,7 @@ def download_ticker(ticker_name):
 
     df = yf.download(ticker_name, period="5y", interval="1d", auto_adjust=True)
     df.ta.strategy(ta.AllStrategy)
+    print("saving file", os.path.join(dir_path, "../output", f"{ticker_name}.csv"))
     df.to_csv(os.path.join(dir_path, "../output", f"{ticker_name}.csv"))
     return df
 
