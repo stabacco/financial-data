@@ -33,7 +33,7 @@ repos:
     rev: 3.8.3
     hooks:
       - id: flake8
-        args: [--max-line-length=90, --max-doc-length=90]
+        args: [--max-line-length=98, --max-doc-length=90]
   - repo: local
     hooks:
       - id: update-requirements-txt

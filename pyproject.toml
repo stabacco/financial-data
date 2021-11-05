@@ -11,6 +11,10 @@ python = "^3.8.1"
 single-version = "^1.2.2"
 pandas-ta = "^0.3.14-beta.0"
 yfinance = "^0.1.64"
+fastparquet = "^0.7.1"
+pyarrow = "^6.0.0"
+tables = "^3.6.1"
+yahoo-fin = "^0.8.9"
 
 
 [tool.poetry.dev-dependencies]
