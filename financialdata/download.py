@@ -33,7 +33,7 @@ def add_indicators(df: pd.DataFrame) -> pd.DataFrame:
             {"kind": "macd"},
             {"kind": "roc"},
             {"kind": "atr", "length": 14},
-            {"kind": "stddev"},
+            {"kind": "stdev"},
         ],
     )
     df.ta.strategy(strategy)
