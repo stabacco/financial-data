@@ -34,6 +34,16 @@ def add_indicators(df: pd.DataFrame) -> pd.DataFrame:
             {"kind": "roc"},
             {"kind": "atr", "length": 14},
             {"kind": "stdev"},
+            {
+                "kind": "cdl_pattern",
+                "name": [
+                    "hammer",
+                    "inverted_hammer",
+                    "doji",
+                    "dojistar",
+                    "morningstar",
+                ],
+            },
         ],
     )
     df.ta.strategy(strategy)
