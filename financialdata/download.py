@@ -38,7 +38,7 @@ def add_indicators(df: pd.DataFrame) -> pd.DataFrame:
                 "kind": "cdl_pattern",
                 "name": [
                     "hammer",
-                    "inverted_hammer",
+                    "invertedhammer",
                     "doji",
                     "dojistar",
                     "morningstar",
