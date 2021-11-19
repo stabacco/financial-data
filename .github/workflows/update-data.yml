@@ -23,7 +23,7 @@ jobs:
           cache: pip
 
       - run: sudo apt-get -y install gcc build-essential
-      - run: >-
+      - run: |
           wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz
             && sudo tar -xzf ta-lib-0.4.0-src.tar.gz
             && sudo rm ta-lib-0.4.0-src.tar.gz
