@@ -78,7 +78,7 @@ def process_tickers(*ticker_names: str) -> list:
 
 if __name__ == "__main__":
 
-    print("Delete this line and restore the next")
-    # from yahoo_fin import stock_info as si
-    # tickers = si.tickers_sp500()
-    # files = process_tickers(*tickers)
+    from yahoo_fin import stock_info as si
+
+    tickers = si.tickers_sp500()
+    files = process_tickers(*tickers)
