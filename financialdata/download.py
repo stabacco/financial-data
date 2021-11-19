@@ -3,7 +3,6 @@ import os
 import pandas as pd
 import pandas_ta as ta
 import yfinance as yf
-from yahoo_fin import stock_info as si
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
@@ -79,5 +78,7 @@ def process_tickers(*ticker_names: str) -> list:
 
 if __name__ == "__main__":
 
-    tickers = si.tickers_sp500()
-    files = process_tickers(*tickers)
+    print("Delete this line and restore the next")
+    # from yahoo_fin import stock_info as si
+    # tickers = si.tickers_sp500()
+    # files = process_tickers(*tickers)

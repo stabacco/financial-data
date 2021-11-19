@@ -796,6 +796,17 @@ optional = false
 python-versions = ">=3.6"
 
 [[package]]
+name = "ta-lib"
+version = "0.4.21"
+description = "Python wrapper for TA-Lib"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+numpy = "*"
+
+[[package]]
 name = "tables"
 version = "3.6.1"
 description = "Hierarchical datasets for Python"
@@ -958,7 +969,7 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytes
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8.1"
-content-hash = "2c3f4c4896b6dd8609a2461c54ea5bd0b0cb5bf8accca91bea13c59be54ff85a"
+content-hash = "964b363c3d32b486bde9259577287e647345be7edacfba3e062fe7688d261ecc"
 
 [metadata.files]
 appdirs = [
@@ -1618,6 +1629,9 @@ six = [
 soupsieve = [
     {file = "soupsieve-2.3-py3-none-any.whl", hash = "sha256:617ffc4d0dfd39c66f4d1413a6e165663a34eca86be9b54f97b91756300ff6df"},
     {file = "soupsieve-2.3.tar.gz", hash = "sha256:e4860f889dfa88774c07da0b276b70c073b6470fa1a4a8350800bb7bce3dcc76"},
+]
+ta-lib = [
+    {file = "TA-Lib-0.4.21.tar.gz", hash = "sha256:74d2f24ca68aa299275f3179a9adde05cff959f91497e088487d0b5c85104e9f"},
 ]
 tables = [
     {file = "tables-3.6.1-2-cp36-cp36m-win32.whl", hash = "sha256:db163df08ded7804d596dee14d88397f6c55cdf4671b3992cb885c0b3890a54d"},

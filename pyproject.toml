@@ -15,6 +15,7 @@ fastparquet = "^0.7.1"
 pyarrow = "^6.0.0"
 tables = "^3.6.1"
 yahoo-fin = "^0.8.9"
+TA-Lib = "^0.4.21"
 
 
 [tool.poetry.dev-dependencies]
